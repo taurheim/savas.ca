@@ -1,0 +1,114 @@
+{
+	"spritekit": {
+		"name": "SpriteKit",
+		"url": "https://developer.apple.com/library/ios/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Introduction/Introduction.html"
+	},
+	"rickshaw": {
+		"name": "Rickshaw.js",
+		"url": "http://code.shutterstock.com/rickshaw/"
+	},
+	"d3": {
+		"name": "d3.js",
+		"url": "http://d3js.org/"
+	},
+	"canvg": {
+		"name": "canvg",
+		"url": "https://code.google.com/p/canvg/"
+	},
+	"jquery": {
+		"name": "jQuery",
+		"url": "http://jquery.com/"
+	},
+	"jqueryui": {
+		"name": "jQuery UI",
+		"url": "http://jqueryui.com/"
+	},
+	"jqueryimagepicker": {
+		"name": "jQuery imagePicker",
+		"url": "http://rvera.github.io/image-picker/"
+	},
+	"jqueryminicolors": {
+		"name": "jQuery imagePicker",
+		"url": "https://github.com/claviska/jquery-miniColors/"
+	},
+	"lightbox": {
+		"name": "LightboxJS",
+		"url": "http://lokeshdhakar.com/projects/lightbox2/"
+	},
+	"rbstoryboardlink": {
+		"name": "RBStoryboardLink",
+		"url": "https://github.com/rob-brown/RBStoryboardLink"
+	},
+	"youtubeiosplayerhelper": {
+		"name": "Youtube iOS Player Helper",
+		"url": "https://github.com/youtube/youtube-ios-player-helper"
+	},
+	"avaudioplayer": {
+		"name": "AvAudioPlayer",
+		"url": "https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAudioPlayerClassReference/"
+	},
+	"slcomposeviewcontroller": {
+		"name": "SLComposeViewController",
+		"url": "https://developer.apple.com/library/prerelease/ios/documentation/NetworkingInternet/Reference/SLComposeViewController_Class/index.htm"
+	},
+	"express": {
+		"name": "Express",
+		"url": "http://expressjs.com/"
+	},
+	"spotifywebapinode": {
+		"name": "Spotify Web API Node",
+		"url": "https://www.npmjs.com/package/spotify-web-api-node"
+	},
+	"xml2js": {
+		"name": "xml2js",
+		"url": "https://www.npmjs.com/package/xml2js"
+	},
+	"async": {
+		"name": "Async.js",
+		"url": "https://github.com/caolan/async"
+	},
+	"mysql": {
+		"name": "node-mysql",
+		"url": "https://github.com/felixge/node-mysql/"
+	},
+	"multer": {
+		"name": "Multer",
+		"url": "https://github.com/expressjs/multer"
+	},
+	"xmldoc": {
+		"name": "xmldoc",
+		"url": "https://www.npmjs.com/package/xmldoc"
+	},
+	"lastfmapi": {
+		"name": "LastfmAPI",
+		"url": "https://github.com/maxkueng/node-lastfmapi"
+	},
+	"gtfs": {
+		"name": "Google GTFS",
+		"url": "https://developers.google.com/transit/gtfs/"
+	},
+	"phantomjs": {
+		"name": "PhantomJS",
+		"url": "http://phantomjs.org/"
+	},
+	"phantomjsnode": {
+		"name": "PhantomJS-Node",
+		"url": "https://github.com/sgentle/phantomjs-node"
+	},
+	"gdk": {
+		"name": "Google Glass Developer Kit",
+		"url": "https://developers.google.com/glass/develop/gdk/"
+	},
+	"sfml": {
+		"name": "SFML",
+		"url": "http://www.sfml-dev.org/"
+	},
+	"pygame": {
+		"name": "PyGame",
+		"url": "http://www.pygame.org/"
+	},
+	"socket.io": {
+		"name": "Socket.io",
+		"url": "http://socket.io/"
+	}
+}

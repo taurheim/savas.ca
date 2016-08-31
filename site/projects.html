@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Niko Savas - Projects</title>
+  <link rel="stylesheet" type="text/css" href="includes/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="includes/projects.css"/>
+  <link rel="stylesheet" type="text/css" href="includes/niko-imageview.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="includes/niko-imageview.js"></script>
+  <script type="text/javascript" src="includes/projects.js"></script>
+</head>
+<body>
+  <div id="main-wrapper">
+    <div id="project-grid-wrapper">
+      <div id="dummy-project" class="project-block flip-container" ontouchstart="this.classList.toggle('hover');" style="display:none">
+        <div class="flipper">
+          <div class="front">
+            <img class="project-image" src="">
+          </div>
+          <div class="back">
+            <div class="project-title"></div>
+            <div class="project-description"></div>
+            <div class="project-external"></div>
+            <img class="bg-img" src="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-wrapper-outer" style="display:none">
+      <div id="click-to-close"></div>
+      <div id="popup-wrapper-inner">
+        <div class="project-title"></div>
+        <div class="project-tagline"></div>
+        <div id="project-tabs">
+            <div id="tab-general">General</div><div id="tab-technical">Technical</div>
+        </div>
+        <div id="description-wrapper">
+          <div class="project-general-description"></div>
+          <div class="project-technical-description" style="display:none"></div>
+        </div>
+        <div id="photo-gallery">
+        </div>
+        <div id="project-external-container">
+          <div id="project-external">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

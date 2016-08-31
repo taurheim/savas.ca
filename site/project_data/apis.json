@@ -1,0 +1,42 @@
+{
+	"lastfm": {
+		"name": "Last.fm API",
+		"url": "http://www.last.fm/api"
+	},
+	"twitter": {
+		"name": "Twitter API",
+		"url": "https://dev.twitter.com/"
+	},
+	"imgur": {
+		"name": "Imgur API",
+		"url": "https://api.imgur.com/"
+	},
+	"spotify": {
+		"name": "Spotify API",
+		"url": "https://developer.spotify.com/web-api"
+	},
+	"plivo": {
+		"name": "Plivo API",
+		"url": "https://www.plivo.com/"
+	},
+	"hamilton": {
+		"name": "Hamilton Open Data",
+		"url": "http://www.hamilton.ca/ProjectsInitiatives/OpenData/"
+	},
+	"mirror": {
+		"name": "Google Mirror API",
+		"url": "https://developers.google.com/glass/v1/reference/"
+	},
+	"myo": {
+		"name": "Myo API",
+		"url": "https://developer.thalmic.com/"
+	},
+	"musicbrainz": {
+		"name": "Musicbrainz API",
+		"url": "https://musicbrainz.org/doc/Development/JSON_Web_Service"
+	},
+	"slack" : {
+		"name": "Slackbot API",
+		"url": "https://api.slack.com/rtm"
+	}
+}

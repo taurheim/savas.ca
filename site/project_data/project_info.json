@@ -1,0 +1,261 @@
+[
+    {
+        "title": "onetap",
+        "name": "One Tap Adventure",
+        "tagline": "One tap to victory!",
+        "date": "July 2014 - September 2014",
+        "collab": ["joecrozier"],
+        "language": ["Objective-C"],
+        "libs": ["spritekit"],
+        "loc": "2400",
+        "short-description": "An RPG for iOS in which the entire game is played with only one tap.",
+        "description": "One Tap Adventure is a small iOS game with a simple premise: the whole game is played with only one input. The player decides where along the screen to let the character walk, and from then on the game plays itself. The game includes elements of a traditional RPG: Levelling up, collecting powerups, fighting monsters- all with only one tap!<br/>Download for iOS: <a href='https://itunes.apple.com/us/app/one-tap-adventure/id917339883?mt=8'>https://itunes.apple.com/us/app/one-tap-adventure/id917339883?mt=8</a><br/>Download for Android: In Progress!",
+        "images":[
+            {
+                "fileName": "1.png",
+                "description": "Title Screen"
+            },
+            {
+                "fileName": "2.png",
+                "description": "A screenshot mid-game. The player is near the center of the screen(he has grabbed the fairy powerup to add people to his party)."
+            },
+            {
+                "fileName": "3.png",
+                "description": "Starting screen. The player has not been given a path yet (must be dragged left/right)"
+            }
+        ]
+    },
+    {
+        "title": "lastwave",
+        "name": "LastWave",
+        "tagline": "Graph your music listening history",
+        "date": "February 2014 - May 2014",
+        "collab": [],
+        "language": ["HTML", "CSS", "Javascript", "PHP"],
+        "libs": ["rickshaw","d3","canvg","jquery","jqueryui","jqueryimagepicker","jqueryminicolors","lightbox"],
+        "api": ["lastfm","twitter","imgur"],
+        "loc": "2500",
+        "github": "https://github.com/taurheim/LastWave",
+        "short-description": "Graph your music listening history in a visually appealing wave graph!",
+        "description": "<a href='http://savas.ca/lastwave'>LastWave</a> is a web app that uses <a href='http://www.last.fm/'>Last.fm</a>'s API to pull your music listening history over time and makes a wave graph of the artist trends.<br/><br/>A wave graph represents data using time as the X axis; on the Y axis, data is represented by area. The larger space that an artist's plays take up, the more that artist was listened to in that week.<br/><br/>LastWave provides a unique opportunity to music listeners to see trends in their music listening history, as you can see trends in artists and genres as well as see the volume of music change over time. For example, I listened to a lot more music during the first month of summer than the first month of school!<br/><br/>Check out a larger gallery of user-uploaded graphs here: <a href='http://savas.ca/lastwave/gallery'>http://savas.ca/lastwave/gallery</a>",
+        "images": [
+            {
+                "fileName": "main_screen.png",
+                "description": "The main screen of LastWave. After entering the appropriate information and choosing options, the graph is created."
+            },
+            {
+                "fileName": "wave-01.png",
+                "description": "My music listening history over a month period."
+            },
+            {
+                "fileName": "wave-02.png",
+                "description": "A user's music listening history using the \"carpet\" style"
+            },
+            {
+                "fileName": "wave-03.png",
+                "description": "A user's music listening history using the \"carpet\" style"
+            }
+        ]
+    },
+    {
+        "title": "take5",
+        "name": "Take5 on the Go",
+        "tagline": "An iOS app for mindfulness",
+        "date": "February 2015 - May 2015",
+        "collab": ["joecrozier"],
+        "language": ["Objective-C"],
+        "libs": ["rbstoryboardlink","youtubeiosplayerhelper","avaudioplayer","slcomposeviewcontroller"],
+        "loc": "2000",
+        "short-description": "An iOS app for mindfulness that encourages sticking to a schedule of meditation.",
+        "description": "<a href='https://itunes.apple.com/ca/app/take-5-on-the-go/id1001249606?mt=8&ign-mpt=uo%3D4'>Take5 on the Go</a> is a mindfulness mediation app that myself and <a href='http://joecrozier.ca/'>Joe Crozier</a> were contracted to create. <br/><br/>Working with a client on a contracted piece of software provided a unique learning opportunity that I'm very glad I was able to take advantage of. <br/><br/>Take5 on the Go encourages mindfulness in users through its \"30 Day Challenge\", where the user is encouraged to participate in meditative sessions daily for 30 days.",
+        "images": [
+            {
+                "fileName": "page1.jpeg",
+                "description": "Take 5 Intro Screen"
+            },
+            {
+                "fileName": "page2.jpeg",
+                "description": "Take 5 Home Screen"
+            },
+            {
+                "fileName": "page3.jpeg",
+                "description": "30 Day Challenge Screen"
+            },
+            {
+                "fileName": "page4.jpeg",
+                "description": "Meditation Screen. This is where the user can select which track they would like to listen to."
+            }
+        ]
+    },
+    {
+        "title": "webtunes",
+        "name": "WebTunes",
+        "tagline": "Share your music library",
+        "date": "March 2015 - April 2015",
+        "collab": ["jemarjones","samnalwa"],
+        "language": ["Javascript", "Node.js", "HTML", "CSS"],
+        "libs": ["express","spotifywebapinode","xml2js","async","mysql","multer","xmldoc","lastfmapi"],
+        "api": ["lastfm","spotify"],
+        "loc": "1800",
+        "short-description": "A web app that allows you to share your music library and tastes quickly and easily.",
+        "description":"While there are many online services that allow for music streaming, even allowing you to create and save playlists and songs, but does not make it easy to share an entire library of music with others. WebTunes allows the user to export their iTunes library to an online format where you can browse songs and albums, add new tracks, and even play songs or playlists through spotify.",
+        "images":[
+            {
+                "fileName": "home.png",
+                "description": "Main Screen for WebTunes. The itunes XML is uploaded from here."
+            },
+            {
+                "fileName": "albumScreen.png",
+                "description": "Album view of a user's library"
+            },
+            {
+                "fileName": "playScreen.png",
+                "description": "Playing a song on WebTunes through spotify"
+            },
+            {
+                "fileName": "visualization1.png",
+                "description": "A visualization of a user's library, with the size of the text corresponding with the playcount by artist."
+            },
+            {
+                "fileName": "visualization2.png",
+                "description": "A visualization of a user's libary, with the size of the bubble corresponding to the number of plays by genre."
+            }
+        ]
+    },
+    {
+        "title": "hsrlive",
+        "name": "HSRlive",
+        "tagline": "When does the bus come?",
+        "date": "February 2015",
+        "collab": [],
+        "language": ["Javascript","Node.js"],
+        "libs": ["gtfs","phantomjs","phantomjsnode"],
+        "api": ["plivo","hamilton"],
+        "loc": "400",
+        "short-description": "Gives accurate arrival times of buses in Hamilton through an SMS service.",
+        "description": "HSRlive is a tool for Hamilton Transit users to make it easier to find out when their bus will be arriving. To the user, HSRlive is simply a cell number that can be texted. When texted with a bus stop number, HSRlive responds with the realtime arrival estimates of the next 7 buses to the stop. HSRlive was created in response to a problem that I was having with the Hamilton Transit system: it is very unreliable and buses often arrive 10 or 15 minutes off from their schedules or don't show up at all. The two main options for getting bus schedules both only reported the scheduled time for the bus, as opposed to the realtime ETA. Hamilton Transit released realtime data for all buses in Hamilton in <a href='https://developers.google.com/transit/gtfs/'>GTFS</a> format last year but all of the software created using this data required an internet connection to access and is built primarily for the desktop web. HSRlive provides a quick and simple solution for people who want to know when their bus is coming, both on mobile and without using data.",
+        "images": [
+            {
+                "fileName": "text.png",
+                "description": "A text from HSRLive giving the bus times for stop #1138"
+            }
+        ]
+    },
+    {
+        "title": "names",
+        "name": "Names",
+        "tagline": "The 21st century rolodex",
+        "date": "September 18th 2014 - October 2nd 2014",
+        "collab": ["joecrozier","dillonmulcahy"],
+        "language": ["Java"],
+        "libs": ["gdk"],
+        "api": ["mirror"],
+        "loc": "500",
+        "short-description": "A concept for a facial recognition application for the Google Glass.<br/><br/>Built for Telus Google Glass Competition 2014.",
+        "description": "<a href='http://www.telus.com/'>TELUS mobility</a> held a <a href='http://eccscoop.wordpress.com/2014/09/16/telus-google-glass-innovation-challenge/'>Google Glass competition</a> at McMaster University: a two-week challenge to see who could develop the best Google glass app to integrate with TELUS products. Our team created an app to allow glass users to easily remember people's names and contact information during a networking conference or party without having to pull out a phone or exchange business cards.<br/><br/>The app took advantage of Google Glass's voice recognition software to take an input such as \"I just met John Doe, his number is 778 891 6456. Don't forget that he is offering an internship at Microsoft to 5 students starting in February\" into a contact that is then synced with google contacts.<br/><br/>After presenting to TELUS, Names was offered the opportunity to present to TELUS at their office in Toronto in November!",
+        "images": [
+            {
+                "fileName": "leo.png",
+                "description": "A concept image for Names"
+            }
+        ]
+    },
+    {
+        "title": "maestro",
+        "name": "Maestro",
+        "tagline": "Conduct your personal orchestra",
+        "date": "October 31st 2014 - November 2nd 2014",
+        "collab": ["joecrozier"],
+        "language": ["C++"],
+        "libs": ["sfml"],
+        "api": ["myo"],
+        "loc": "500",
+        "short-description": "Wearing a myo armband, wave your arm around to feel like you're conducting an orchestra!<br/><br/>Placed top 8 at YHack 2014.",
+        "description": "Maestro was developed during <a href='http://www.yhack.org/'>YHack 2014</a>, a 36 hour hackathon held by Yale University. Maestro was built for the <a href='https://www.thalmic.com/en/myo/'>Myo Gesture Control Armband</a>, and it lets the wearer feel like they are conducting an orchestra with the wave of their arm. Of the hundreds of projects judged at YHack, Maestro placed in the top 8, earning a prize of $750!<br/><br/> Using your arm's movements, you control a variety of instruments in a grand orchestral piece. Depending on the direction of your arm's movements, a different note is played. All of this information is gathered using Thalmic Lab's Myo armband. As you compose, you are able to switch instruments between a strings section, horns section, and the vocal section of the orchestra.<br/><br/>Each section has a range of 24 notes, played in the key of C. Due to a carefully crafted musical algorithm, everything you play sounds good- it is impossible to play a discordant note. In addition to the code, all of the sound involved in Maestro was recorded during YHack using Apple's Logic Pro.",
+        "images":[
+            {
+                "fileName": "maestro.png",
+                "description": "Maestro's UI. As you conduct, the letters in \"Maestro\" jump up and down based on the note being played."
+            },
+            {
+                "fileName": "competition.JPG",
+                "description": "Joe Crozier and I during YHack's judging section"
+            },
+            {
+                "fileName": "myo.JPG",
+                "description": "A close up picture of Thalmic lab's Myo"
+            }
+        ]
+    },
+    {
+        "title": "englife",
+        "name": "Eng Life",
+        "tagline": "Defend your faculty's honor in Eng Life",
+        "date": "October 2013 - November 2013",
+        "collab": ["joecrozier"],
+        "language": ["Python"],
+        "libs": ["pygame"],
+        "loc": "2100",
+        "github": "https://github.com/taurheim/Eng-Life",
+        "short-description": "A fast paced action RPG in which you play as a first year Engineer defending yourself against hordes of other faculties",
+        "description": "McMaster University's Engineering program held <a href='http://epiclab.mcmaster.ca/?page_id=6952'>a contest</a> in my first semester of University develop games using Python. <a href='http://joecrozier.ca'>Joe Crozier</a> and I made an arena fighter that places the engineer in recognizable areas on campus and forces them to fight off students from other faculties using a calculus textbook.<br/><br/>Each level concludes with a \"boss fight\", featuring a football coach, art student, and professors from the first year engineering classes. Each boss fight has unique mechanics that forces the player to react quickly.",
+        "images":[
+            {
+                "fileName": "englife-01.png",
+                "description": "Title Screen"
+            },
+            {
+                "fileName": "englife-06.png",
+                "description": "Level 1 boss fight: The arts student"
+            },
+            {
+                "fileName": "englife-13.png",
+                "description": "After completing level2, the player unlocks a projectile ability!"
+            },
+            {
+                "fileName": "animated-2.gif",
+                "description": "An animation showing gameplay from level 3, fighting off commerce students."
+            },
+            {
+                "fileName": "englife-17.png",
+                "description": "Boss fight for level 4: Dr. Smith - the programming professor."
+            },
+            {
+                "fileName": "englife-12.png",
+                "description": "Level 2: Fighting off the football players."
+            },
+            {
+                "fileName": "animated-1.gif",
+                "description": "Level 3"
+            }
+        ]
+    },
+    {
+        "title": "virtualdj",
+        "name": "Virtual DJ",
+        "tagline": "Auto-generating collaborative playlists",
+        "date": "January 16th, 2016 - January 17th, 2016",
+        "collab": ["joecrozier"],
+        "language": ["Javascript"],
+        "libs": ["socket.io"],
+        "api": ["lastfm", "spotify", "musicbrainz", "slack"],
+        "loc": "850",
+        "github": "https://github.com/taurheim/Virtual-DJ",
+        "short-description": "Train your virtual DJ to pick tracks for you and your coworkers to listen to in a collaborative playlist.<br/><br/>Built for DeltaHacks 2015.",
+        "description": "Virtual DJ Description.",
+        "images": []
+    },
+    {
+        "title": "craig",
+        "name": "crAIg",
+        "tagline": "The self-teaching Mario AI",
+        "date": "November 6th, 2015 - November 8th, 2015",
+        "collab": ["joecrozier"],
+        "language": ["lua","Javascript"],
+        "loc": "1250",
+        "github": "https://github.com/joenot443/crAIg",
+        "short-description": "A program that teaches itself to play Super Mario for the NES using Neural Networks.<br/><br/>Placed top 8 at YHack 2015.",
+        "description": "craig description.",
+        "images": []
+    }
+]
