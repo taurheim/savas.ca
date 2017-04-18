@@ -1,15 +1,48 @@
 body {
   font-family: Roboto, sans-serif;
 }
+
+#main-wrapper {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+#projects-header, #projects-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 1 0 auto;
+  min-height: 60px;
+}
+
+#projects-header a {
+  font-size: 30px;
+  font-family: Quicksand, Roboto, sans-serif;
+}
+
+#close-button {
+  background-image: url("images/close.svg");
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-size: cover;
+  opacity:0.5;
+  cursor: pointer;
+}
+
 /* Project Blocks */
 #project-grid-wrapper {
   width:100%  ;
   max-width:900px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align:center;
+  display:flex;
+  align-items:center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 1 auto;
 }
 
 .project-block {
@@ -26,7 +59,19 @@ body {
 .front, .back {
   box-shadow: -3px 4px 5px #777;
 }
+
 /* Card front styling */
+.front {
+  filter: brightness(80%) saturate(30%);
+  transition: all 0.1s linear;
+}
+
+/* https://codepen.io/jr/pen/rliKq */
+.front:hover {
+  filter: brightness(100%);
+  transform: rotateX(12deg);
+}
+
 .front .project-image, .back .bg-img {
   width:100%;
 }
@@ -48,6 +93,12 @@ body {
   width:90%;
   margin-left:auto;
   margin-right:auto;
+  color: #900;
+}
+
+.project-general-description, .project-technical-description {
+  transition: opacity 0.3s linear;
+  overflow: hidden;
 }
 
 .back .project-external {
@@ -76,6 +127,7 @@ body {
   position:fixed;
   top:0px;
   left:0px;
+  transition: opacity 0.2s linear;
 }
 #popup-wrapper-inner {
   width:90%;
@@ -88,6 +140,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align:center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display:flex;
+  flex-flow: column;
 }
 
 .project-title {
@@ -101,7 +157,6 @@ body {
 
 #project-tabs {
   line-height:30px;
-  height:30px;
   margin-top:50px;
 }
 
@@ -126,17 +181,45 @@ body {
   text-align:left;
 }
 
-#photo-gallery img {
-  height:100px;
-  display:inline-block;
+#photo-gallery {
+  margin-top:30px;
+  margin-bottom:20px;
+  flex: 1 1 auto;
+}
+
+.project-external {
+  font-size: 24px;
+  color: #900;
+  margin-right:20px;
+  display:flex;
+  flex: 0 1 120px;
+  justify-content: flex-end;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+.project-external-link {
+  width:50px;
+  font-size: 14px;
+  text-align:center;
+  margin-left:15px;
+}
+
+.project-external-link img {
+  width:30px;
+}
+
+.project-external-link a:hover {
+  border: 0 none;
 }
 
 #click-to-close {
   width:100%;
   height:100%;
   position:absolute;
-  opacity:0;
+  opacity:0.3;
   cursor:pointer;
+  background-color: #000;
 }
 
 .vert-line {
@@ -147,41 +230,46 @@ body {
 }
 
 /* Flipping Code */
-/* entire container, keeps perspective */
-.flip-container {
-  perspective: 1000;
-}
-
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
-
-/* flip speed goes here */
 .flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
-  position: relative;
+  position:relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
-  backface-visibility: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.6s;
+          transition: transform 0.6s;
 }
 
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
 .back {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.flip-container.flipped .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.flip-container.flipped .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+/* make back unclickable
+.flipped .front, .flip-container:not(.flipped) .back {
+  pointer-events: none;
+} */
+
+/* Util */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
 }

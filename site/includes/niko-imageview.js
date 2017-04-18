@@ -5,6 +5,7 @@
 var NikoImageView = function() {
   this.parentElement;
   this.imageUrls = [];
+  this.footerMessage = "Click or tap anywhere to close.";
 
   /*
     init
@@ -24,7 +25,14 @@ var NikoImageView = function() {
     @param imageUrl Url to put in the src attribute of the <img> tag
   */
   this.addImage = function(imageUrl) {
-    this.parentElement.innerHTML += "<img src='" + imageUrl + "'>";
+    var img = document.createElement("img");
+    img.setAttribute("class", "niko-image");
+    img.setAttribute("src", imageUrl);
+
+    //Bind lightbox
+    img.addEventListener("click", this.lightboxImage(imageUrl));
+
+    this.parentElement.appendChild(img);
   };
 
   /*
@@ -40,5 +48,45 @@ var NikoImageView = function() {
     Remove all images from the view
   */
   this.clearView = function() {
+    this.parentElement.innerHTML = "";
   };
+
+  /*
+    lightboxImage
+    Show a given image in a lightbox
+  */
+  this.lightboxImage = function(url) {
+    var self = this;
+    return function() {
+      var wrapper = document.createElement("div");
+      wrapper.setAttribute("class", "niko-lightbox");
+      document.body.appendChild(wrapper);
+
+      var background = document.createElement("div");
+      background.setAttribute("class", "black_overlay");
+
+      var foreground = document.createElement("div");
+      foreground.setAttribute("class", "white_content");
+
+      var image = document.createElement("img");
+      image.setAttribute("src", url);
+
+      var footer = document.createElement("div");
+      footer.setAttribute("class", "lightbox-footer");
+      footer.innerHTML = self.footerMessage;
+
+      foreground.appendChild(image);
+      foreground.appendChild(footer);
+
+      wrapper.appendChild(foreground);
+      wrapper.appendChild(background);
+
+      background.addEventListener("click", function() {
+        document.body.removeChild(wrapper);
+      });
+      foreground.addEventListener("click", function() {
+        document.body.removeChild(wrapper);
+      });
+    }
+  }
 };

@@ -1,0 +1,56 @@
+#photo-gallery .niko-image {
+	height:100px;
+	display:inline-block;
+	margin:20px;
+}
+
+#photo-gallery .niko-image:hover {
+	cursor: pointer;
+}
+
+.niko-lightbox {
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.black_overlay{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	padding: 30px 30px 0 30px;
+	background-color: white;
+	z-index:1002;
+	overflow: hidden;
+	text-align:center;
+}
+
+.white_content:hover, .black_overlay:hover {
+	cursor: pointer;
+}
+
+.white_content img {
+	max-width: 80%;
+	max-height: 800px;
+}
+
+.lightbox-footer {
+	height:40px;
+	line-height:40px;
+	font-size: 14px;
+}

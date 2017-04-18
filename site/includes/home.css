@@ -2,8 +2,12 @@ body {
 	font-family: Quicksand, sans-serif;
 }
 #main-wrapper {
-	width: 600px;
-	height: 400px;
+	width: 100%;
+	height: 100%;
+	min-width: 320px;
+	max-width: 550px;
+	min-height: 320px;
+	max-height: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -19,30 +23,31 @@ body {
 	font-size:32px;
 	position:absolute;
 	z-index:2;
-	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
-   	   -moz-transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
-         -o-transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
-            transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000); /* ease-in */
+	transition: transform 2s ease;
 }
 
 #url-resume {
-	top: 80px;
-	left: 40px;
+	top: 50px;
+	left: 5%;
 }
 
 #url-projects {
-	left:240px;
-	top:10px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	width: 120px;
 }
 
 #url-blog {
-	left: 492px;
-	top:80px;
+	top:50px;
+	right: 13%;
 }
 
 #title-wrapper {
 	background: url("images/savas-logo.png") no-repeat center;
-	width:500px;
+	width: 100%;
 	height:300px;
 	display:block;
 	margin-left:auto;
@@ -66,23 +71,64 @@ body {
 	height:50px;
 	width:50px;
 	position:absolute;
-	top:330px;
+	bottom: 20px;
+}
+
+.icon a:hover {
+	border: 0 none;
+}
+
+.icon img {
+	opacity:0.7;
+	width:100%;
+	height:100%;
 }
 
 #icon-github {
-	opacity: 0.7;
-	background: url("images/github-logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	left: 200px;
+	left: 20%;
 }
 
 #icon-linkedin {
-	opacity:0.7;
-	background: url("images/linkedin-logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	left:350px;
+	right: 20%;
+}
+
+/*
+	TODO: Use calculus to determine arc length and calculate
+	transforms based on movement around an ellipse.
+	For now, I'm just going to hard code them.
+*/
+
+#url-projects.orbit-clockwise {
+	transform: rotate(10deg) translateX(10px) translateY(0px) rotate(-10deg);
+}
+#url-projects.orbit-counterclockwise {
+	transform: rotate(-10deg) translateX(-10px) translateY(0px) rotate(10deg);
+}
+
+#url-resume.orbit-clockwise {
+	transform: rotate(10deg) translateX(10px) translateY(-10px) rotate(-10deg);
+}
+#url-resume.orbit-counterclockwise {
+	transform: rotate(-10deg) translateX(-10px) translateY(10px) rotate(10deg);
+}
+
+#url-blog.orbit-clockwise {
+	transform: rotate(10deg) translateX(10px) translateY(10px) rotate(-10deg);
+}
+#url-blog.orbit-counterclockwise {
+	transform: rotate(-10deg) translateX(-10px) translateY(-10px) rotate(10deg);
+}
+
+#icon-github.orbit-clockwise {
+	transform: rotate(10deg) translateX(-10px) translateY(0px) rotate(-10deg);
+}
+#icon-github.orbit-counterclockwise {
+	transform: rotate(-10deg) translateX(15px) translateY(10px) rotate(10deg);
+}
+
+#icon-linkedin.orbit-clockwise {
+	transform: rotate(10deg) translateX(-15px) translateY(10px) rotate(-10deg);
+}
+#icon-linkedin.orbit-counterclockwise {
+	transform: rotate(-10deg) translateX(10px) translateY(0px) rotate(10deg);
 }

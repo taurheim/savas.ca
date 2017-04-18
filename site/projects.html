@@ -2,15 +2,21 @@
 <html>
 <head>
   <title>Niko Savas - Projects</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="includes/styles.css"/>
   <link rel="stylesheet" type="text/css" href="includes/projects.css"/>
   <link rel="stylesheet" type="text/css" href="includes/niko-imageview.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="includes/niko-imageview.js"></script>
   <script type="text/javascript" src="includes/projects.js"></script>
 </head>
 <body>
   <div id="main-wrapper">
+    <div id="projects-header">
+      <a href="http://savas.ca/">Home</a>
+    </div>
     <div id="project-grid-wrapper">
       <div id="dummy-project" class="project-block flip-container" ontouchstart="this.classList.toggle('hover');" style="display:none">
         <div class="flipper">
@@ -26,9 +32,10 @@
         </div>
       </div>
     </div>
-    <div id="popup-wrapper-outer" style="display:none">
+    <div id="popup-wrapper-outer" class="hidden">
       <div id="click-to-close"></div>
       <div id="popup-wrapper-inner">
+        <div id="close-button"></div>
         <div class="project-title"></div>
         <div class="project-tagline"></div>
         <div id="project-tabs">
@@ -36,15 +43,15 @@
         </div>
         <div id="description-wrapper">
           <div class="project-general-description"></div>
-          <div class="project-technical-description" style="display:none"></div>
+          <div class="project-technical-description hidden"></div>
         </div>
         <div id="photo-gallery">
         </div>
-        <div id="project-external-container">
-          <div id="project-external">
-          </div>
+        <div class="project-external">
         </div>
       </div>
+    </div>
+    <div id="projects-footer">
     </div>
   </div>
 </body>
