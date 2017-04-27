@@ -110,5 +110,9 @@
 	"socket.io": {
 		"name": "Socket.io",
 		"url": "http://socket.io/"
+	},
+	"SDL": {
+		"name": "SDL",
+		"url": "https://www.libsdl.org/"
 	}
 }

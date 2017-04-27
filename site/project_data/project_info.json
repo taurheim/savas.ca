@@ -242,8 +242,17 @@
         "loc": "850",
         "github": "https://github.com/taurheim/Virtual-DJ",
         "short-description": "Train your virtual DJ to pick tracks for you and your coworkers to listen to in a collaborative playlist.<br/><br/>Built for DeltaHacks 2015.",
-        "description": "Virtual DJ Description.",
-        "images": []
+        "description": "Virtual DJ was a hackathon project created for DeltaHacks, a 24-hour hackathon held by McMaster University.<br><br>Virtual DJ allows users to create a room with their friends, within which they can add and listen to music together in realtime. As the group adds songs to the room, a “Virtual DJ” AI begins to learn about the group’s unique music tastes, and eventually begins to add songs that it thinks the group would like.<br><br>Virtual DJ was created to fill a void in collaborative music listening, and is designed specifically for scenarios where people might want to listen to the same music while working. Many tools allow for real time music streaming with friends, but maintaining the song queue eventually becomes tedious and time consuming, detracting from productivity. <br><br>With Virtual DJ, users can add songs as they please without worrying that the queue will end up becoming empty - the Virtual DJ will make sure of that!",
+        "images": [
+            {
+                "fileName": "mainscreen.png",
+                "description": "Main screen of Virtual DJ"
+            },
+            {
+                "fileName": "suggestions.png",
+                "description": "After a while, Virtual DJ starts suggesting its own tracks."
+            }
+        ]
     },
     {
         "title": "craig",
@@ -268,5 +277,19 @@
                 "description": "A representation of crAIg's neural network."
             }
         ]
+    },
+    {
+        "title": "nomad",
+        "name": "Nomad Engine",
+        "tagline": "A game engine from scratch!",
+        "date": "November 19th, 2015 - Present",
+        "collab": [],
+        "language": ["C++"],
+        "libs": ["SDL"],
+        "medium": "https://medium.com/@savas/nomad-game-engine-part-1-why-3be9825cb90a",
+        "loc": "",
+        "short-description": "An game engine written from scratch in C++",
+        "description": "Nomad is a solo passion project of mine where I try to make a game and game engine from scratch. The goal of this project was to challenge myself, so in many places I have attempted to implement advances techniques to improve performance. I have also started a series of blog posts detailing the design of my engine as well as implementation details. I expect this project to be a very long lasting one that may end up spanning years as I implement things like in game editors, networking, and multithreading.<br><br>The final goal of the game is a zelda-like multiplayer games where small groups of players can take on dungeons together. Whether I get to that point is still up in the air but I’m very much enjoying the process, which is the goal of the project!",
+        "images": []
     }
 ]
