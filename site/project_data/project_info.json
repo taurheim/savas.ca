@@ -253,9 +253,20 @@
         "collab": ["joecrozier"],
         "language": ["lua","Javascript"],
         "loc": "1250",
+        "devpost": "https://devpost.com/software/craig",
+        "medium": "https://medium.com/@savas/craig-using-neural-networks-to-learn-mario-a76036b639ad",
         "github": "https://github.com/joenot443/crAIg",
         "short-description": "A program that teaches itself to play Super Mario for the NES using Neural Networks.<br/><br/>Placed top 8 at YHack 2015.",
-        "description": "craig description.",
-        "images": []
+        "description": "crAIg is a self-teaching AI that uses neuroevolution algorithms to learn how to play Super Mario Bros for the NES. crAIg begins the game with no knowledge of Mario or the goals of the game. By using a \"fitness function\" - distance travelled in the level, a <a href='http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf'>genetic algorithm</a> teaches crAIg to play mario, teaching him to jump, avoid enemies, and ultimately complete the level.<br><br>This project was created by myself and <a href='http://joecrozier.ca'>Joe Crozier</a> for <a href='http://www.yhack.org/'>YHack</a> 2014 in 48 hours. For more information about the project, check the external links below! ",
+        "images": [
+            {
+                "fileName": "first-jump.png",
+                "description": "crAIg's first jump"
+            },
+            {
+                "fileName": "neural-net.png",
+                "description": "A representation of crAIg's neural network."
+            }
+        ]
     }
 ]

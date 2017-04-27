@@ -134,12 +134,20 @@ function displayProject(projectIndex){
     //External links
     var external = popup.getElementsByClassName("project-external")[0];
     external.innerHTML = "";
-    if(projectData["github"]){
+    if(projectData["github"] || projectData["medium"] || projectData["devpost"]){
       external.innerHTML = "Check it out here: ";
     }
 
     if(projectData["github"]){
-      external.innerHTML += "<div class='project-external-link'><a href='"+projectData["github"]+"' target='_blank'><img src='includes/images/github-logo.png'>GitHub</a></div>";
+      external.innerHTML += "<div class='project-external-link'><a href='"+projectData["github"]+"' target='_blank'><img src='includes/images/github-logo.png'><br>GitHub</a></div>";
+    }
+
+    if(projectData["medium"]){
+      external.innerHTML += "<div class='project-external-link'><a href='"+projectData["medium"]+"' target='_blank'><img src='includes/images/medium-logo.png'><br>Medium</a></div>";
+    }
+
+    if(projectData["devpost"]){
+      external.innerHTML += "<div class='project-external-link'><a href='"+projectData["devpost"]+"' target='_blank'><img src='includes/images/devpost-logo.png'><br>Devpost</a></div>";
     }
   }
 }
