@@ -13,7 +13,7 @@ var NikoImageView = function() {
     @param parentElement Div to turn into an image viewer. CSS should already exist to dictate the size of the images.
   */
   this.init = function(parentElement) {
-    this.parentElement = parentElement;
+    this.parentElement = n$(parentElement);
     //Add wrappers to each image
     //Add arrows
     //Bind arrows
@@ -25,14 +25,12 @@ var NikoImageView = function() {
     @param imageUrl Url to put in the src attribute of the <img> tag
   */
   this.addImage = function(imageUrl) {
-    var img = document.createElement("img");
-    img.setAttribute("class", "niko-image");
-    img.setAttribute("src", imageUrl);
-
-    //Bind lightbox
-    img.addEventListener("click", this.lightboxImage(imageUrl));
-
-    this.parentElement.appendChild(img);
+    var image = nikoQuery.createElement("img", {
+      "class": "niko-image",
+      "src": imageUrl
+    });
+    image.onClick(this.lightboxImage(imageUrl));
+    this.parentElement.append(image);
   };
 
   /*
@@ -48,7 +46,7 @@ var NikoImageView = function() {
     Remove all images from the view
   */
   this.clearView = function() {
-    this.parentElement.innerHTML = "";
+    this.parentElement.html("");
   };
 
   /*
@@ -58,34 +56,27 @@ var NikoImageView = function() {
   this.lightboxImage = function(url) {
     var self = this;
     return function() {
-      var wrapper = document.createElement("div");
-      wrapper.setAttribute("class", "niko-lightbox");
-      document.body.appendChild(wrapper);
+      var wrapper = nikoQuery.createElement("div", {"class": "niko-lightbox"});
+      n$("body").append(wrapper);
 
-      var background = document.createElement("div");
-      background.setAttribute("class", "black_overlay");
+      var background = nikoQuery.createElement("div", {"class": "black_overlay"});
+      var foreground = nikoQuery.createElement("div", {"class": "white_content"});
+      var image = nikoQuery.createElement("img", {"src": url});
+      var footer = nikoQuery.createElement("div", {"class", "lightbox-footer"});
 
-      var foreground = document.createElement("div");
-      foreground.setAttribute("class", "white_content");
+      // Put it all together
+      footer.html(self.footerMessage);
+      foreground.append(image);
+      foreground.append(footer);
+      wrapper.append(foreground);
+      wrapper.append(background);
 
-      var image = document.createElement("img");
-      image.setAttribute("src", url);
-
-      var footer = document.createElement("div");
-      footer.setAttribute("class", "lightbox-footer");
-      footer.innerHTML = self.footerMessage;
-
-      foreground.appendChild(image);
-      foreground.appendChild(footer);
-
-      wrapper.appendChild(foreground);
-      wrapper.appendChild(background);
-
-      background.addEventListener("click", function() {
-        document.body.removeChild(wrapper);
+      background.onClick(function() {
+        wrapper.remove();
       });
-      foreground.addEventListener("click", function() {
-        document.body.removeChild(wrapper);
+
+      foreground.onClick(function() {
+        wrapper.remove();
       });
     }
   }
