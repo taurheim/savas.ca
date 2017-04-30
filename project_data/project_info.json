@@ -290,6 +290,11 @@
         "loc": "",
         "short-description": "An game engine written from scratch in C++",
         "description": "Nomad is a solo passion project of mine where I try to make a game and game engine from scratch. The goal of this project was to challenge myself, so in many places I have attempted to implement advances techniques to improve performance. I have also started a series of blog posts detailing the design of my engine as well as implementation details. I expect this project to be a very long lasting one that may end up spanning years as I implement things like in game editors, networking, and multithreading.<br><br>The final goal of the game is a zelda-like multiplayer games where small groups of players can take on dungeons together. Whether I get to that point is still up in the air but I’m very much enjoying the process, which is the goal of the project!",
-        "images": []
+        "images": [
+            {
+                "fileName": "screen1.png",
+                "description": "An early screenshot of the game with spatial hashing collision detection shown."
+            }
+        ]
     }
 ]

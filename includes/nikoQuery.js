@@ -122,6 +122,8 @@ var nikoQuery = {
 		for (var attrName in attrs) {
 			newElement.attr(attrName, attrs[attrName]);
 		}
+
+		return newElement;
 	},
 	loadJSON: function(path, callback) {
 		var xhr = new XMLHttpRequest();

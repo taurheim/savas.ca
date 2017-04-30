@@ -23,7 +23,7 @@ window.onload = function() {
         return callback();
       });
     }
-  }
+  });
 
   nikoQuery.parallel(asyncMethods, function(err){
     displayProjectIcons();
@@ -45,8 +45,8 @@ window.onload = function() {
 
   n$("#click-to-close").onClick(closePopup);
   n$("#close-button").onClick(closePopup);
-  n$("tab-general").onClick(openGeneral);
-  n$("tab-technical").onClick(openTechnical);
+  n$("#tab-general").onClick(openGeneral);
+  n$("#tab-technical").onClick(openTechnical);
 
   //Initialize the image viewer
   imageView.init(n$("#photo-gallery"));
@@ -73,15 +73,15 @@ function displayProjectIcons(){
     //Add icons for github, etc.
     if(project["github"]) {
       var logo = nikoQuery.createElement("img", {"src": "includes/images/github-logo.png"});
-      projectElement.children(".project-external").append(logo);
+      projectElement.children(".project-external")[0].append(logo);
     }
     if(project["devpost"]) {
       var logo = nikoQuery.createElement("img", {"src": "includes/images/devpost-logo.png"});
-      projectElement.children(".project-external").append(logo);
+      projectElement.children(".project-external")[0].append(logo);
     }
     if(project["medium"]) {
       var logo = nikoQuery.createElement("img", {"src": "includes/images/medium-logo.png"});
-      projectElement.children(".project-external").append(logo);
+      projectElement.children(".project-external")[0].append(logo);
     }
 
     //Flip when front is clicked
@@ -93,7 +93,7 @@ function displayProjectIcons(){
     projectElement.children(".back")[0].onTap(displayProject(i));
 
     //Add the div and show it
-    $("#project-grid-wrapper").append(projectElement);
+    n$("#project-grid-wrapper").append(projectElement);
     projectElement.show();
   }
 }
@@ -112,7 +112,7 @@ function displayProject(projectIndex){
     popup.show();
     popup.children(".project-general-description")[0].show();
     popup.children(".project-technical-description")[0].hide();
-    $("#project-grid-wrapper").hide();
+    n$("#project-grid-wrapper").hide();
 
     //Title/header
     popup.children(".project-title")[0].html(projectData["name"]);
@@ -191,6 +191,6 @@ function unflipAll() {
   var allFlipped = n$(".flipped");
 
   for(var i=0;i<allFlipped.length;i++){
-    allFlipped[i].attr("class", allFlipped[i].className.replace(/ ?flipped/, ""));
+    allFlipped[i].attr("class", allFlipped[i].element.className.replace(/ ?flipped/, ""));
   }
 }

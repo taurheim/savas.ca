@@ -57,12 +57,12 @@ var NikoImageView = function() {
     var self = this;
     return function() {
       var wrapper = nikoQuery.createElement("div", {"class": "niko-lightbox"});
-      n$("body").append(wrapper);
+      n$("body")[0].append(wrapper);
 
       var background = nikoQuery.createElement("div", {"class": "black_overlay"});
       var foreground = nikoQuery.createElement("div", {"class": "white_content"});
       var image = nikoQuery.createElement("img", {"src": url});
-      var footer = nikoQuery.createElement("div", {"class", "lightbox-footer"});
+      var footer = nikoQuery.createElement("div", {"class": "lightbox-footer"});
 
       // Put it all together
       footer.html(self.footerMessage);
