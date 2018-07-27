@@ -45,15 +45,7 @@
             },
             {
                 "fileName": "wave-01.png",
-                "description": "My music listening history over a month period."
-            },
-            {
-                "fileName": "wave-02.png",
-                "description": "A user's music listening history using the \"carpet\" style"
-            },
-            {
-                "fileName": "wave-03.png",
-                "description": "A user's music listening history using the \"carpet\" style"
+                "description": "My music listening history over a 3 month period."
             }
         ]
     },
