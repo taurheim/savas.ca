@@ -38,5 +38,9 @@
 	"slack" : {
 		"name": "Slackbot API",
 		"url": "https://api.slack.com/rtm"
+	},
+	"cloudinary": {
+		"name": "Cloudinary",
+		"url": "http://cloudinary.com"
 	}
 }

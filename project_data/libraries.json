@@ -114,5 +114,9 @@
 	"SDL": {
 		"name": "SDL",
 		"url": "https://www.libsdl.org/"
+	},
+	"vue": {
+		"name": "Vue.js",
+		"url": "https://vuejs.org"
 	}
 }
