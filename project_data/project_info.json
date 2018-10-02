@@ -3,6 +3,7 @@
         "title": "craig",
         "name": "crAIg",
         "tagline": "The self-teaching Mario AI",
+        "highlight": true,
         "date": "November 6th, 2015 - November 8th, 2015",
         "collab": ["joecrozier"],
         "language": ["lua","Javascript"],
@@ -27,6 +28,7 @@
         "title": "nomad",
         "name": "Nomad Engine",
         "tagline": "A game engine from scratch!",
+        "highlight": true,
         "date": "November 19th, 2015 - Present",
         "collab": [],
         "language": ["C++"],
@@ -50,6 +52,7 @@
         "title": "lastwave",
         "name": "LastWave",
         "tagline": "Graph your music listening history",
+        "highlight": true,
         "date": "February 2014 - May 2014 (v1, v2) and June 2018 - July 2018 (v3)",
         "collab": [],
         "language": ["HTML", "CSS", "TypeScript"],
@@ -292,5 +295,5 @@
                 "description": "After a while, Virtual DJ starts suggesting its own tracks."
             }
         ]
-    },
+    }
 ]

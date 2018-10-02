@@ -79,6 +79,10 @@ var n$Element = function(el) {
 	this.removeClass = function(className) {
 		el.className = el.className.replace(/ ?className/, "");
 	}
+
+	this.hasClass = function(className) {
+		return el.className.indexOf(className) !== -1;
+	}
 };
 
 //TODO need a new name for selector that's more explicit

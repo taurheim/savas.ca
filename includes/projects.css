@@ -34,6 +34,14 @@ body {
   cursor: pointer;
 }
 
+#projects-footer h2 {
+  color: #900;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: Quicksand, Roboto, sans-serif;
+  cursor: pointer;
+}
+
 /* Project Blocks */
 #project-grid-wrapper {
   width:100%  ;

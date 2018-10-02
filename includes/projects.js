@@ -53,6 +53,7 @@ window.onload = function() {
 }
 
 function displayProjectIcons(){
+  var allProjectsShown = true;
   //Set Global
   for(var i=0;i<json_data["project_info"].length;i++){
 
@@ -94,8 +95,29 @@ function displayProjectIcons(){
 
     //Add the div and show it
     n$("#project-grid-wrapper").append(projectElement);
-    projectElement.show();
+
+    if (project["highlight"] === true) {
+      projectElement.show();
+    } else {
+      allProjectsShown = false;
+    }
   }
+
+  if (!allProjectsShown) {
+    var showAllButton = nikoQuery.createElement("h2", {"id": "showAllButton"});
+    showAllButton.html("Show all");
+    showAllButton.onClick(showHiddenProjects);
+    n$("#projects-footer").append(showAllButton);
+  }
+}
+
+function showHiddenProjects() {
+  n$("#project-grid-wrapper").children(".project-block").forEach((element) => {
+    if (element.attr("id") !== "dummy-project") {
+      n$(element).show();
+    }
+  });
+  n$("#showAllButton").hide();
 }
 
 function flip(element){
