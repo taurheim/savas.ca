@@ -1,5 +1,76 @@
 [
     {
+        "title": "craig",
+        "name": "crAIg",
+        "tagline": "The self-teaching Mario AI",
+        "date": "November 6th, 2015 - November 8th, 2015",
+        "collab": ["joecrozier"],
+        "language": ["lua","Javascript"],
+        "loc": "1250",
+        "devpost": "https://devpost.com/software/craig",
+        "medium": "https://medium.com/@savas/craig-using-neural-networks-to-learn-mario-a76036b639ad",
+        "github": "https://github.com/joenot443/crAIg",
+        "short-description": "A program that teaches itself to play Super Mario for the NES using Neural Networks.<br/><br/>Placed top 8 at YHack 2015.",
+        "description": "crAIg is a self-teaching AI that uses neuroevolution algorithms to learn how to play Super Mario Bros for the NES. crAIg begins the game with no knowledge of Mario or the goals of the game. By using a \"fitness function\" - distance travelled in the level, a <a href='http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf'>genetic algorithm</a> teaches crAIg to play mario, teaching him to jump, avoid enemies, and ultimately complete the level.<br><br>This project was created by myself and <a href='http://joecrozier.ca'>Joe Crozier</a> for <a href='http://www.yhack.org/'>YHack</a> 2014 in 48 hours. For more information about the project, check the external links below! ",
+        "images": [
+            {
+                "fileName": "first-jump.png",
+                "description": "crAIg's first jump"
+            },
+            {
+                "fileName": "neural-net.png",
+                "description": "A representation of crAIg's neural network."
+            }
+        ]
+    },
+    {
+        "title": "nomad",
+        "name": "Nomad Engine",
+        "tagline": "A game engine from scratch!",
+        "date": "November 19th, 2015 - Present",
+        "collab": [],
+        "language": ["C++"],
+        "libs": ["SDL"],
+        "medium": "https://medium.com/@savas/nomad-game-engine-part-1-why-3be9825cb90a",
+        "loc": "",
+        "short-description": "An game engine written from scratch in C++",
+        "description": "Nomad is a solo passion project of mine where I try to make a game and game engine from scratch. The goal of this project was to challenge myself, so in many places I have attempted to implement advances techniques to improve performance. I have also started a series of blog posts detailing the design of my engine as well as implementation details. I expect this project to be a very long lasting one that may end up spanning years as I implement things like in game editors, networking, and multithreading.<br><br>The final goal of the game is a zelda-like multiplayer games where small groups of players can take on dungeons together. Whether I get to that point is still up in the air but I’m very much enjoying the process, which is the goal of the project!<br><br>Project homepage: <a href='https://savas.ca/nomad'>savas.ca/nomad</a>",
+        "images": [
+            {
+                "fileName": "screen1.png",
+                "description": "An early screenshot of the game with spatial hashing collision detection shown."
+            },
+            {
+                "fileName": "mask.png",
+                "description": "An example of the graphics that go along with my blog posts. This one explains the use of a bitset to auto-subscribe systems to entities."
+            }
+        ]
+    }
+    {
+        "title": "lastwave",
+        "name": "LastWave",
+        "tagline": "Graph your music listening history",
+        "date": "February 2014 - May 2014 (v1, v2) and June 2018 - July 2018 (v3)",
+        "collab": [],
+        "language": ["HTML", "CSS", "TypeScript"],
+        "libs": ["rickshaw","d3","vue"],
+        "api": ["lastfm","twitter","cloudinary"],
+        "loc": "2500",
+        "github": "https://github.com/taurheim/LastWave",
+        "short-description": "Graph your music listening history in a visually appealing wave graph!",
+        "description": "<a href='http://savas.ca/lastwave'>LastWave</a> is a web app that uses <a href='http://www.last.fm/'>Last.fm</a>'s API to pull your music listening history over time and makes a wave graph of the artist trends.<br/><br/>A wave graph represents data using time as the X axis; on the Y axis, data is represented by area. The larger space that an artist's plays take up, the more that artist was listened to in that week.<br/><br/>LastWave provides a unique opportunity to music listeners to see trends in their music listening history, as you can see trends in artists and genres as well as see the volume of music change over time. For example, I listened to a lot more music during the first month of summer than the first month of school!<br/><br/>Check out a larger gallery of user-uploaded graphs here: <a href='http://savas.ca/lastwave/gallery'>http://savas.ca/lastwave/gallery</a>",
+        "images": [
+            {
+                "fileName": "main_screen.png",
+                "description": "The main screen of LastWave. After entering the appropriate information and choosing options, the graph is created."
+            },
+            {
+                "fileName": "wave-01.png",
+                "description": "My music listening history over a 3 month period."
+            }
+        ]
+    },
+    {
         "title": "onetap",
         "name": "One Tap Adventure",
         "tagline": "One tap to victory!",
@@ -22,30 +93,6 @@
             {
                 "fileName": "3.png",
                 "description": "Starting screen. The player has not been given a path yet (must be dragged left/right)"
-            }
-        ]
-    },
-    {
-        "title": "lastwave",
-        "name": "LastWave",
-        "tagline": "Graph your music listening history",
-        "date": "February 2014 - May 2014 (v1, v2) and June 2018 - July 2018 (v3)",
-        "collab": [],
-        "language": ["HTML", "CSS", "TypeScript"],
-        "libs": ["rickshaw","d3","vue"],
-        "api": ["lastfm","twitter","cloudinary"],
-        "loc": "2500",
-        "github": "https://github.com/taurheim/LastWave",
-        "short-description": "Graph your music listening history in a visually appealing wave graph!",
-        "description": "<a href='http://savas.ca/lastwave'>LastWave</a> is a web app that uses <a href='http://www.last.fm/'>Last.fm</a>'s API to pull your music listening history over time and makes a wave graph of the artist trends.<br/><br/>A wave graph represents data using time as the X axis; on the Y axis, data is represented by area. The larger space that an artist's plays take up, the more that artist was listened to in that week.<br/><br/>LastWave provides a unique opportunity to music listeners to see trends in their music listening history, as you can see trends in artists and genres as well as see the volume of music change over time. For example, I listened to a lot more music during the first month of summer than the first month of school!<br/><br/>Check out a larger gallery of user-uploaded graphs here: <a href='http://savas.ca/lastwave/gallery'>http://savas.ca/lastwave/gallery</a>",
-        "images": [
-            {
-                "fileName": "main_screen.png",
-                "description": "The main screen of LastWave. After entering the appropriate information and choosing options, the graph is created."
-            },
-            {
-                "fileName": "wave-01.png",
-                "description": "My music listening history over a 3 month period."
             }
         ]
     },
@@ -246,47 +293,4 @@
             }
         ]
     },
-    {
-        "title": "craig",
-        "name": "crAIg",
-        "tagline": "The self-teaching Mario AI",
-        "date": "November 6th, 2015 - November 8th, 2015",
-        "collab": ["joecrozier"],
-        "language": ["lua","Javascript"],
-        "loc": "1250",
-        "devpost": "https://devpost.com/software/craig",
-        "medium": "https://medium.com/@savas/craig-using-neural-networks-to-learn-mario-a76036b639ad",
-        "github": "https://github.com/joenot443/crAIg",
-        "short-description": "A program that teaches itself to play Super Mario for the NES using Neural Networks.<br/><br/>Placed top 8 at YHack 2015.",
-        "description": "crAIg is a self-teaching AI that uses neuroevolution algorithms to learn how to play Super Mario Bros for the NES. crAIg begins the game with no knowledge of Mario or the goals of the game. By using a \"fitness function\" - distance travelled in the level, a <a href='http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf'>genetic algorithm</a> teaches crAIg to play mario, teaching him to jump, avoid enemies, and ultimately complete the level.<br><br>This project was created by myself and <a href='http://joecrozier.ca'>Joe Crozier</a> for <a href='http://www.yhack.org/'>YHack</a> 2014 in 48 hours. For more information about the project, check the external links below! ",
-        "images": [
-            {
-                "fileName": "first-jump.png",
-                "description": "crAIg's first jump"
-            },
-            {
-                "fileName": "neural-net.png",
-                "description": "A representation of crAIg's neural network."
-            }
-        ]
-    },
-    {
-        "title": "nomad",
-        "name": "Nomad Engine",
-        "tagline": "A game engine from scratch!",
-        "date": "November 19th, 2015 - Present",
-        "collab": [],
-        "language": ["C++"],
-        "libs": ["SDL"],
-        "medium": "https://medium.com/@savas/nomad-game-engine-part-1-why-3be9825cb90a",
-        "loc": "",
-        "short-description": "An game engine written from scratch in C++",
-        "description": "Nomad is a solo passion project of mine where I try to make a game and game engine from scratch. The goal of this project was to challenge myself, so in many places I have attempted to implement advances techniques to improve performance. I have also started a series of blog posts detailing the design of my engine as well as implementation details. I expect this project to be a very long lasting one that may end up spanning years as I implement things like in game editors, networking, and multithreading.<br><br>The final goal of the game is a zelda-like multiplayer games where small groups of players can take on dungeons together. Whether I get to that point is still up in the air but I’m very much enjoying the process, which is the goal of the project!",
-        "images": [
-            {
-                "fileName": "screen1.png",
-                "description": "An early screenshot of the game with spatial hashing collision detection shown."
-            }
-        ]
-    }
 ]
